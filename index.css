@@ -1,0 +1,542 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body{
+    background-color: #3e5a85;
+}
+
+
+.header{
+    min-height: 4vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.nav{
+    display: flex;
+    padding: 2% 1000%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 40px;
+    position: center;
+}
+.nav-links ul li a{
+    color: rgb(216, 179, 134);
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background:rgb(222, 197, 166);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url(imagen/index2.png);
+}
+.banner__content {
+    padding: 16px;
+    max-width: 1890px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.banner_logo{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(217, 182, 140);
+}
+
+
+.main{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url(imagen/background/1.jpg);
+    background-size: cover;
+}
+
+.column {
+	float: left;
+	width: 20%;
+	padding: 8% 6.5%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+.Title-P h1{
+    padding-top: 4%;
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+
+.contenedorP{
+    padding: 10% 5%;
+    min-height: 40vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 30px;
+}
+.contenedorP figure{
+    top: 0px;
+    position:relative;
+    height: 600px;
+    width: 400px;
+    border-radius: 30px;
+    cursor: pointer;    
+    overflow: hidden;
+ }
+
+.contenedorP figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+    border-radius: 30px;
+}
+.contenedorP figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(192,110,158,0.638);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    border-radius: 30px;
+}
+.contenedorP figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+    border-radius: 30px;
+}
+.contenedorP figure:hover > .capa h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+}
+.contenedorP figure:hover > img{
+    transform: scale(1);
+    border-radius: 30px;
+}
+
+.contenedorP figure .capa h3{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.contenedorP figure .capa p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.fotos-horizontales{
+    min-height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url(imagen/background/2.jpg);
+    background-size: cover;
+}
+
+.columnH {
+	float: left;
+	width: 20%;
+	padding: 0% 6%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.contenedorPH{
+    top: 30px;
+    min-height: 40vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 30px;
+}
+.contenedorPH figure{
+    position:relative;
+    height: 300px;
+    width: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+ }
+
+.contenedorPH figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+    border-radius: 30px;
+}
+.contenedorPH figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(192,110,158,0.638);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    border-radius: 30px;
+}
+
+
+.columnH2 {
+	float: left;
+	width: 20%;
+	padding: 0% 14%;
+}
+
+.contenedorPH2{
+    top: 10px;
+    min-height: 40vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 30px;
+}
+.contenedorPH2 figure{
+    position:relative;
+    height: 300px;
+    width: 500px;
+    border-radius: 30px;
+    cursor: pointer;    
+    overflow: hidden;
+ }
+
+.contenedorPH2 figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+    border-radius: 30px;
+}
+.contenedorPH2 figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(192,110,158,0.638);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    border-radius: 30px;
+}
+.contenedorPH2 figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+    border-radius: 30px;
+}
+.contenedorPH2 figure:hover > .capa h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+.contenedorPH2 figure:hover > img{
+    transform: scale(1);
+    border-radius: 30px;
+}
+
+.contenedorPH2 figure .capa h3{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.contenedorPH2 figure .capa p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: 30px 140px;
+    border-radius: 30px;
+}
+
+.contenedorPH3{
+    min-height: 40vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 30px;
+}
+.contenedorPH3 figure{
+    position:relative;
+    height: 300px;
+    width: 500px;
+    border-radius: 30px;
+    cursor: pointer;    
+    overflow: hidden;
+ }
+
+.contenedorPH3 figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+    border-radius: 30px;
+}
+.contenedorPH3 figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(192,110,158,0.638);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    border-radius: 30px;
+}
+.contenedorPH3 figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+    border-radius: 30px;
+}
+.contenedorPH3 figure:hover > .capa h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+.contenedorPH3 figure:hover > img{
+    transform: scale(1);
+    border-radius: 30px;
+}
+
+.contenedorPH3 figure .capa h3{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.contenedorPH3 figure .capa p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: 30px 140px;
+    border-radius: 30px;
+}
+
+
+.contenedorPH4{
+    min-height: 40vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 30px;
+}
+.contenedorPH4 figure{
+    position:relative;
+    height: 300px;
+    width: 500px;
+    border-radius: 30px;
+    cursor: pointer;    
+    overflow: hidden;
+ }
+
+.contenedorPH4 figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+    border-radius: 30px;
+}
+.contenedorPH4 figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(192,110,158,0.638);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.fotos-andy{
+    min-height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url(imagen/background/4.jpg);
+    background-size: cover;
+}
+
+
+.columnH3 {
+	float: left;
+	width: 15%;
+	padding: 0% 9%;
+}
+.columnH4 {
+	float: left;
+	width: 20%;
+	padding: 0% 15%;
+}
+.contenedorPV{
+    top: 90px;
+    min-height: 40vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 30px;
+}
+.contenedorPV figure{
+    position:relative;
+    height: 400px;
+    width: 300px;
+    border-radius: 30px; 
+    overflow: hidden;
+ }
+
+.contenedorPV figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+    border-radius: 30px;
+}
+.contenedorPV figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(192,110,158,0.638);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    border-radius: 30px;
+}
+
+
+.fotos-verticales{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url(imagen/background/5.jpg);
+    background-size: cover;
+}
+
+.contenedorPV2{
+    top: 80px;
+    min-height: 40vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 30px;
+}
+.contenedorPV2 figure{
+    position:relative;
+    height: 400px;
+    width: 300px;
+    border-radius: 30px;  
+    cursor: pointer;
+    overflow: hidden;
+ }
+
+ .contenedorPV2 figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+    border-radius: 30px;
+}
+.contenedorPV2 figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(242,228,222,0.638);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    border-radius: 30px;
+}
+.contenedorPV2 figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+    border-radius: 30px;
+}
+.contenedorPV2 figure:hover > .capa h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+.contenedorPV2 figure:hover > img{
+    transform: scale(1);
+    border-radius: 30px;
+}
+
+.contenedorPV2 figure .capa h3{
+    color: rgba(69, 78,116);
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.contenedorPV2 figure .capa p{
+    color: rgba(69, 78,116);
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+    border-radius: 30px;
+}
